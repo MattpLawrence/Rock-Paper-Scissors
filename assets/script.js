@@ -11,14 +11,12 @@ var playGame = function (){
   if (userChoice == ""){
     playGame()
   }
-  
+  // close function if cancel is selected
   if (!userChoice){
     return;
   } 
   
-
-  
-  userChoice = userChoice.toUpperCase();
+  userChoice = userChoice.toUpperCase(); //match cases to the choices matrix
 
 // put if statement in to catch if the user inputs a variable other than r, p, or s
   if(!choices.includes(userChoice)){
@@ -55,8 +53,6 @@ var playGame = function (){
   // set a variable to help condense the results to fewer windows
   var choiceAlert = "You chose:  " + userWord + "\nComputer chose:  " + computerWord;
 
-
-
   if (userChoice === computerChoice){
     ties++; //remember to add one to ties count
     window.alert(choiceAlert +"\nIt's a tie! 😶"); //call choiceAlert to show choices and results on the same page.
@@ -82,5 +78,3 @@ var playGame = function (){
     return; //if false, quit
   }
 }
-
-// playGame();
