@@ -21,3 +21,10 @@ button{
 button:hover{
   transform: scale(1.2);
 }
+
+h2{
+  text-align: center;
+  margin-top: 6rem;
+  color: rgb(96, 96, 187);
+  font-size: 2rem;
+}
