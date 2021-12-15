@@ -7,10 +7,17 @@ var choices = ["R","P","S"];
 var playGame = function (){
   var userChoice = window.prompt( "Enter R, P, or S")
 
+  // restart game if no value is entered but "okay is pressed"
+  if (userChoice == ""){
+    playGame()
+  }
+  
   if (!userChoice){
     return;
-  }
+  } 
+  
 
+  
   userChoice = userChoice.toUpperCase();
 
 // put if statement in to catch if the user inputs a variable other than r, p, or s
