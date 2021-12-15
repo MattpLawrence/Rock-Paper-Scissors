@@ -1,0 +1,23 @@
+h1{
+  text-align: center;
+  margin-top: 4rem;
+  color: black;
+  font-size: 3rem;
+}
+
+button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  width: 15rem;
+  height: 4rem;
+  background-color: rgb(107, 97, 129);
+  transition: .3s;
+  font-size: 1.5rem;
+  color: white;
+}
+
+button:hover{
+  transform: scale(1.2);
+}
